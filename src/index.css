@@ -1,18 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&family=Baloo+Tamma+2:wght@500&family=Readex+Pro:wght@200;300&family=Roboto:wght@300&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&family=Baloo+Tamma+2:wght@500&family=Readex+Pro:wght@200;300&family=Roboto:wght@300&display=swap');
+
 
 @layer base {
   body {
-    @apply font-[Readex+Pro];
+    @apply font-Readex font-extrabold;
   }
   li {
     @apply px-4;
     @apply cursor-pointer;
   }
   .logo > p {
-    @apply font-[Baloo+Tamma+2];
+    @apply font-Baloo;
   }
 }
