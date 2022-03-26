@@ -9,15 +9,15 @@ const [nav, setNav] = useState(false)
 const handleClick = () => setNav(!nav)
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#333399] text-white">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#333399] text-white shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] hover:shadow-lg">
        <p className="font-[Baloo+Tamma+2]">snowleopardAlexa</p>
         {/* menu */}
         <div className="hidden md:flex">
             <ul className="hidden md:flex">
                 <li>Home</li>
                 <li>About</li>
-                <li>Skills</li>
-                <li>Work</li>
+                <li>Projects</li>
+                <li>Technologies</li>
                 <li>Contact</li>
             </ul>
         </div>
