@@ -1,5 +1,4 @@
 import React from "react";
-import { BsTags } from "react-icons/bs";
 import { projects } from "../data/data";
 
 const Projects = () => {
@@ -13,7 +12,7 @@ const Projects = () => {
             <p className="py-4">These are my projects</p>
         </div>
         <div className="w-full grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4 text-center py-8">
-        {projects.map(({ id, title, image, description, tags }) => (
+        {projects.map(({ id, title, image, description, tags, code, visit }) => (
             <div key={id} className="bg-[#262666] rounded-md py-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] hover:scale-110 duration-500">
               <img className="object-cover h-48 w-96" src={image} alt="project" />
                 <h2 className="text-[#ff00cc] text-2xl my-4">{title}</h2>
@@ -25,6 +24,10 @@ const Projects = () => {
                       <div key={id}>{tag}</div>
                     </div> 
                     ))}  
+                </div>  
+                <div className="py-4 space-x-[20px]">
+                 <a href={code}><button className="text-white sm:mx-auto px-6 py-3 my-2 bg-gradient-to-r from-[#f12711] to-[#f5af19]">Code</button></a> 
+                 <a href={visit}><button className="text-white sm:mx-auto px-6 py-3 my-2 bg-gradient-to-l from-[#f12711] to-[#f5af19]">Visit</button></a>
                 </div>    
             </div>     
           ))}
