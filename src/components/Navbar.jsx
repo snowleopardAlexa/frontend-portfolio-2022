@@ -11,7 +11,7 @@ const handleClick = () => setNav(!nav)
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#333399] text-white shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] hover:shadow-lg">
-       <p className="font-Roboto">snowleopardAlexa</p>
+       <p className="font-Fredoka tracking-[.15em]">snowleopardAlexa</p>
         {/* menu */}
         <div className="hidden md:flex">
             <ul className="hidden md:flex">
@@ -80,14 +80,14 @@ const handleClick = () => setNav(!nav)
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
               <a 
                className="flex justify-between items-center w-full text-gray-300" 
-               href="/">
+               href="https://www.linkedin.com/in/aleksandra-slomska-1039681b3/">
                LinkedIn <FaLinkedin size={30} />
               </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#232526]">
               <a 
                className="flex justify-between items-center w-full text-gray-300" 
-               href="/">
+               href="https://github.com/snowleopardAlexa">
                Github <FaGithub size={30} />
               </a>
           </li>
