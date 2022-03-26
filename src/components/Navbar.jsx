@@ -48,27 +48,27 @@ const handleClick = () => setNav(!nav)
         </div>
         {/* mobile menu */}
         <ul className={!nav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#333399] flex flex-col justify-center items-center"}>
-            <li className="py-6 text-4xl hover:text-[#ff00cc]">
+            <li className="py-6 text-2xl hover:text-[#ff00cc]">
             <Link onClick={handleClick} to="home" smooth={true} duration={500}>
                     Home
             </Link>
             </li>
-            <li className="py-6 text-4xl hover:text-[#ff00cc]">
+            <li className="py-6 text-2xl hover:text-[#ff00cc]">
             <Link onClick={handleClick} to="about" smooth={true} duration={500}>
                     About
             </Link>
             </li>
-            <li className="py-6 text-4xl hover:text-[#ff00cc]">
+            <li className="py-6 text-2xl hover:text-[#ff00cc]">
             <Link onClick={handleClick} to="projects" smooth={true} duration={500}>
                     Projects
             </Link>
             </li>
-            <li className="py-6 text-4xl hover:text-[#ff00cc]">
+            <li className="py-6 text-2xl hover:text-[#ff00cc]">
             <Link onClick={handleClick} to="technologies" smooth={true} duration={500}>
                     Technologies
             </Link>
             </li>
-            <li className="py-6 text-4xl hover:text-[#ff00cc]">
+            <li className="py-6 text-2xl hover:text-[#ff00cc]">
             <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
                     Contact
             </Link>
@@ -94,14 +94,14 @@ const handleClick = () => setNav(!nav)
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#dd1818]">
               <a 
                className="flex justify-between items-center w-full text-gray-300" 
-               href="/">
+               href="mailto:aleksandravslomska@gmail.com">
                Gmail <SiGmail size={30} />
               </a>
           </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#833ab4]">
               <a 
                className="flex justify-between items-center w-full text-gray-300" 
-               href="/">
+               href="https://snowleopardalexa.github.io/resume-pdf-html/">
                Resume <BsFillPersonLinesFill size={30} />
               </a>
           </li>

@@ -3,24 +3,23 @@ import alexa from '../assets/alexa.png'
 const About = () => {
   return (
     <div name="about" className="w-full h-screen bg-[#333399] text-[#ff00cc]">
-     <div className="flex flex-col justify-center items-center w-full h-full">
-     <div className="sm:text-right pb-2 pl-4">
+     <div className="flex flex-col justify-center sm:items-center w-full h-full">
+     <div className="sm:text-center pb-2 pl-4">
         <p className="font-Fredoka tracking-[.10em] text-4xl font-bold inline border-b-4 border-white">
             About
         </p>
-        <img className="mx-auto py-8" src={alexa} alt="profile" width="100px" height="100px" />
+        <img className="sm:mx-auto py-8" src={alexa} alt="profile" width="100px" height="100px" />
       </div>
   
       <div></div>
 
       <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-4xl font-bold">
-             <p className="font-Readex font-bold">Hi! I'm Alexa, nice to meet you. Please take a look around</p>
+             <p className="font-Readex font-bold">Hi! I'm Alexa, I'm happy to meet you. Please take a look around!</p>
            </div>
           <div>
-               <p className="text-white py-2"> I am a passionate about working and building excellent software that improves
-                   the lives of those around me. I specliazine in front ened and i wish to become
-                   a great developer i think...
+               <p className="text-white py-2"> 
+                I am passionate developer who enjoys working with the code on a daily basis. I design and develop software products for clients and also as a hobby. I am dedicated to the cause and hard-working. I am also a proud moma of a fur-baby Kion The Lion King. 
                </p>
            </div>
         </div>

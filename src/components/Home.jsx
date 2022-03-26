@@ -14,7 +14,7 @@ const Home = () => {
          love with React Native. I have always wanted to build mobile apps and web apps so I do it now!
       </p>
       <div>
-          <button className="text-white mx-auto group border-2 px-6 py-3 my-2 flex items-center hover:bg-white-600 hover:border-pink-600 hover:text-[#ff00cc]">
+          <button className="text-white sm:mx-auto group border-2 px-6 py-3 my-2 flex items-center hover:bg-white-600 hover:border-pink-600 hover:text-[#ff00cc]">
            <Link className="font-Fredoka tracking-[.10em]" to="projects">View Projects</Link> 
             <span className="group-hover:rotate-90 duration-300">
              <HiArrowNarrowRight className="ml-3" />

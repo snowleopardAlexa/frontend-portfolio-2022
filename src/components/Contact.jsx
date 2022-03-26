@@ -15,13 +15,13 @@ const Contact = () => {
           <button className="font-Fredoka tracking-[.10em] text-white border-2 hover:bg-[#ff00cc] hover:border-[#ff00cc] px-4 py-3 my-8 mx-auto flex items-center">Let's work together!</button>
       </form>
     </div>
-    <div class="bg-[#333399] sm:text-center">
-    <h5 class="text-xl text-white font-bold mb-6 sm:text-center xl:text-left">Stay connected</h5>
-        <div className="space-x-[20px] py-6 flex sm:justify-center xl:justify-start">
+    <div class="bg-[#333399] text-center sm:text-center">
+    <h5 class="font-Fredoka tracking-[.10em] text-xl text-[#ff00cc] font-bold mb-6 sm:text-center xl:text-left">Stay connected</h5>
+        <div className="space-x-[20px] py-6 flex justify-center sm:justify-center xl:justify-start">
         <a href="https://github.com/snowleopardAlexa"><FaGithub  color="#fff" size={30} /></a> 
         <a href="https://www.linkedin.com/in/aleksandra-slomska-1039681b3/"><FaLinkedin  color="#fff" size={30}/></a>
         </div>
-        <p className="py-12 text-white">Aleksandra Slomska &copy; 2022</p>
+        <p className="py-12 text-white">Made by Aleksandra Slomska 2022 &copy;</p>
     </div>
   </>
   )
