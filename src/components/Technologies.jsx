@@ -10,7 +10,7 @@ const Technologies = () => {
   return (
     <div name="technologies" className="w-full bg-[#333399] text-white">
      {/* Container */}
-     <div className="max-w-[1000px] mx-auto sm:p-4 md:p-8 flex flex-col sm:text-center justify-center w-full h-full">
+     <div className="max-w-[1000px] mx-auto p-8 sm:p-4 md:p-8 flex flex-col sm:text-center justify-center w-full h-full">
          <div className="mt-36">
              <p className="font-Fredoka tracking-[.10em] text-4xl font-bold inline border-b-4 border-white text-[#ff00cc]">Technologies</p>
              <p className="py-4">These are the technologies I've worked with</p>
