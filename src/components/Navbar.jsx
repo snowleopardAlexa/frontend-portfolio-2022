@@ -29,8 +29,8 @@ const handleClick = () => setNav(!nav)
         <ul className={!nav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#333399] flex flex-col justify-center items-center"}>
             <li className="py-6 text-4xl">Home</li>
             <li className="py-6 text-4xl">About</li>
-            <li className="py-6 text-4xl">Skills</li>
-            <li className="py-6 text-4xl">Work</li>
+            <li className="py-6 text-4xl">Projects</li>
+            <li className="py-6 text-4xl">Technologies</li>
             <li className="py-6 text-4xl">Contact</li>
         </ul>
 
