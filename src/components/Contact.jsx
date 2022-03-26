@@ -1,5 +1,3 @@
-import { MdEmail } from 'react-icons/md'
-
 const Contact = () => {
   return (
     <div name="contact" className="w-full h-screen bg-[#333399] flex justify-center items-center p-4">

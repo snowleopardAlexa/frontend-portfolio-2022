@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
 
@@ -14,11 +15,31 @@ const handleClick = () => setNav(!nav)
         {/* menu */}
         <div className="hidden md:flex">
             <ul className="hidden md:flex">
-                <li className="hover:text-[#ff00cc] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">Home</li>
-                <li className="hover:text-[#ff00cc] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">About</li>
-                <li className="hover:text-[#ff00cc] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">Projects</li>
-                <li className="hover:text-[#ff00cc] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">Technologies</li>
-                <li className="hover:text-[#ff00cc] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">Contact</li>
+                <li className="hover:text-[#ff00cc] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                  <Link to="home" smooth={true} duration={500}>
+                    Home
+                  </Link>
+                </li>
+                <li className="hover:text-[#ff00cc] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                <Link to="about" smooth={true} duration={500}>
+                    About
+                </Link>
+                </li>
+                <li className="hover:text-[#ff00cc] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                <Link to="projects" smooth={true} duration={500}>
+                    Projects
+                </Link>
+                </li>
+                <li className="hover:text-[#ff00cc] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                <Link to="technologies" smooth={true} duration={500}>
+                    Technologies
+                </Link>
+                </li>
+                <li className="hover:text-[#ff00cc] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                <Link to="contact" smooth={true} duration={500}>
+                    Contact
+                </Link>
+                </li>
             </ul>
         </div>
         {/* hamburger menu */}
@@ -27,11 +48,31 @@ const handleClick = () => setNav(!nav)
         </div>
         {/* mobile menu */}
         <ul className={!nav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#333399] flex flex-col justify-center items-center"}>
-            <li className="py-6 text-4xl hover:text-[#ff00cc]">Home</li>
-            <li className="py-6 text-4xl hover:text-[#ff00cc]">About</li>
-            <li className="py-6 text-4xl hover:text-[#ff00cc]">Projects</li>
-            <li className="py-6 text-4xl hover:text-[#ff00cc]">Technologies</li>
-            <li className="py-6 text-4xl hover:text-[#ff00cc]">Contact</li>
+            <li className="py-6 text-4xl hover:text-[#ff00cc]">
+            <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+                    Home
+            </Link>
+            </li>
+            <li className="py-6 text-4xl hover:text-[#ff00cc]">
+            <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+                    About
+            </Link>
+            </li>
+            <li className="py-6 text-4xl hover:text-[#ff00cc]">
+            <Link onClick={handleClick} to="projects" smooth={true} duration={500}>
+                    Projects
+            </Link>
+            </li>
+            <li className="py-6 text-4xl hover:text-[#ff00cc]">
+            <Link onClick={handleClick} to="technologies" smooth={true} duration={500}>
+                    Technologies
+            </Link>
+            </li>
+            <li className="py-6 text-4xl hover:text-[#ff00cc]">
+            <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+                    Contact
+            </Link>
+            </li>
         </ul>
 
         {/* social icons */}
