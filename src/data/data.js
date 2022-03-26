@@ -8,7 +8,7 @@ import eden from "../assets/eden.png"
 export const projects = [
     {
       title: "LinkedIn Clone",
-      description: "This is an Instagram Clone. It had been built with React, Redux Toolkit as a state management library, Firebase database to store and retrive data and CSS with BEM methodology.",
+      description: "This is a desktop Instagram Clone. It had been built with React, Redux Toolkit as a state management library, Firebase database to store and retrive data and CSS with BEM methodology.",
       image: linkedin,
       tags: ["React", "Redux Toolkit", "Firebase", "CSS"],
       code: "https://github.com/snowleopardAlexa/linkedin-clone",
