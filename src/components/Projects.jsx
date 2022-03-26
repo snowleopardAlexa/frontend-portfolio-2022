@@ -1,40 +1,29 @@
-import React from 'react'
-import linkedinclone from '../assets/linkedin-clone.png'
-import uberclone from '../assets/linkedin-clone.png'
-import mediumclone from '../assets/linkedin-clone.png'
-import instagramclone from '../assets/linkedin-clone.png'
-import huluclone from '../assets/linkedin-clone.png'
-import eden from '../assets/eden.png'
+import React from "react";
+import { projects } from "../data/data";
 
 const Projects = () => {
   return (
-    <div name="work" className="w-full md:h-screen text-gray-300 bg-[#333399]">
+    <div name="work" className="w-full bg-[#333399] text-white">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-          <div className="pb-8">
-              <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">Projects</p>
-              <p className="py-6">Check out some of my recent work</p>
-          </div>
-      </div>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="shadow-lg shadow-[] group container rounded-md flex justify-center items-center mx-auto content-div">
-             {/* hover effect */}
-              <div className="">
-                <span>
-                
-                </span>  
-                <div>
-                    <a href="/">
-                        <button></button>
-                    </a>
-                    <a href="/">
-                        <button></button>
-                    </a>
-                </div>
-              </div>
-          </div>
+        <div>
+          <p className="text-4xl font-bold inline border-b-4 border-white text-[#ff00cc]">
+            Projects
+          </p>
+          <p className="py-4">These are the technologies I've worked with</p>
+        </div>
+        {/* project card */}
+        {projects.map(({ id, title, image, description }) => (
+           <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
+           <div key={id} className="bg-[#262666] rounded-md py-4 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.3)] hover:scale-110 duration-500">
+               <img className="object-cover h-48 w-96 hover:object-scale-down" src={image} alt="project" />
+               <h2 className="text-2xl my-4">{title}</h2>
+               <p className="py-2">{description}</p>
+           </div>
+           </div>
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
