@@ -44,7 +44,7 @@ const handleClick = () => setNav(!nav)
         </div>
         {/* hamburger menu */}
         <div onClick={handleClick} className="md:hidden z-10">
-          {!nav ? <FaBars size={20} color="#ff00cc"/> : <FaTimes />}
+          {!nav ? <FaBars size={20} color="#ff00cc"/> : <FaTimes size={20} color="#ff00cc" />}
         </div>
         {/* mobile menu */}
         <ul className={!nav ? "hidden" : "absolute top-0 left-0 w-full h-screen bg-[#333399] flex flex-col justify-center items-center"}>
