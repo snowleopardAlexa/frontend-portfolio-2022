@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/snowleopardAlexa/linkedin-clone">
-    <img src="/public/portfolio.png" alt="Logo" width="80" height="80">
+    <img src="/public/porto.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Front-End | React | React Native | Full-Stack Portfolio 2022</h3>
